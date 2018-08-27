@@ -5,21 +5,22 @@ my $paikka;
 my $to;
 my $from = 'kirjasto-lukusali@jyu.fi';
 my $replyto = 'kirjasto-lukusali@jyu.fi';
-my $subject = 'S‰ilytyspaikkakysely';
+my $subject = 'S√§ilytyspaikkakysely';
 
 while (<>) {
 #($nimi, $paikka, $email) = /^"(.*)";"(.*)";"(.*)"/;
 ($nimi, $paikka, $to) = /^(.*);(.*);(.*)/;
 
-my $message = "Hyv‰ s‰ilytyspaikan k‰ytt‰j‰ \n\n
-Ole hyv‰ ja vastaa t‰h‰n viestiin s‰hkˆpostitse: tarvitsetko edelleen s‰ilytyspaikkaa vapaakappalekokoelman (fennica) aineistolle vai voiko paikan poistaa k‰ytˆst‰si?\n
-L‰het‰ vastauksesi viimeist‰‰n 10.9.2017.\n
-Ellet vastaa kyselyyn s‰ilytyspaikka poistetaan.\n\n
-Nimi: ".$nimi."     S‰ilytyspaikan nro: ".$paikka." \n\n
-Huomioithan, ett‰ luvattoman aineiston s‰ilytt‰misest‰ s‰ilytyspaikassa seuraa 10 euron maksu.\n
+my $message = "Hyv√§ s√§ilytyspaikan k√§ytt√§j√§ \n
+Ole hyv√§ ja vastaa t√§h√§n viestiin s√§hk√∂postitse: tarvitsetko edelleen s√§ilytyspaikkaa vapaakappalekokoelman (fennica) aineistolle vai voiko paikan poistaa k√§yt√∂st√§si?
+L√§het√§ vastauksesi viimeist√§√§n 10.9.2018.\n
+Ellet vastaa kyselyyn s√§ilytyspaikka poistetaan.\n
+Nimi: ".$nimi."     S√§ilytyspaikan nro: ".$paikka." \n
+Jos tarvitset edelleen s√§ilytyspaikkaa, saat sen k√§ytt√∂√∂si 28.2.2019 saakka. Kirjaston tulevasta peruskorjauksesta johtuen s√§ilytyspaikat poistetaan k√§yt√∂st√§ 1.3.2019 alkaen.
+V√§ist√∂tiloista on mahdollista saada uusi s√§ilytyspaikka. Uusien s√§ilytyspaikkojen k√§yt√∂st√§ tulee tarkempaa tietoa my√∂hemmin.\n
 Kiitos vastauksestasi!\n
-Lis‰tietoja: \n
-kirjasto-lukusali\@jyu.fi\n
+Lis√§tietoja:
+kirjasto-lukusali\@jyu.fi
 Tietopalvelu puh. 040 024 7463
 Varpu Paananen puh. 040 805 3814
 Leena Pappila puh. 040 805 3790\n";
